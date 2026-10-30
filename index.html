@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Ryan Jay Castellano — Remote Video Production Specialist, Content Creator & IT Professional based in Pagadian City, Philippines. Specializing in web development, graphic design, and system programming." />
+  <meta name="keywords"
+    content="Ryan Jay Castellano, IT Professional, Web Developer, Content Creator, Video Production, Pagadian City, Philippines" />
+  <meta property="og:title" content="Ryan Jay Castellano | IT Professional & Content Creator" />
+  <meta property="og:description"
+    content="Portfolio of Ryan Jay Pahonang Castellano — Remote Video Production Specialist, Content Creator, and IT Professional." />
+  <meta property="og:image" content="profile/Ryan.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="profile/Ryan.jpg" />
+  <title>Ryan Jay Castellano | IT Professional & Content Creator</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="shortcut icon" href="favicon.svg" />
+
+  <!-- Google Fonts: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap"
+    rel="stylesheet" />
+
+  <!-- Phosphor Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/regular/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/fill/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/bold/style.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- LOADER -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader-inner">
+      <span class="loader-initials">RJC</span>
+      <div class="loader-bar">
+        <div class="loader-bar-fill"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" aria-label="Ryan Jay Castellano - Home">
+        <span class="logo-text">RJC</span>
+        <span class="logo-dot"></span>
+      </a>
+
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#works" class="nav-link">Works</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="cv/RyanCastellanoCV.pdf" class="nav-link nav-link--cv" target="_blank" rel="noopener noreferrer"
+            download="RyanCastellanoCV.pdf" aria-label="Download CV"><i class="ph ph-file-pdf" aria-hidden="true"></i>
+            CV</a></li>
+        <li><a href="https://github.com/lushuking" class="nav-link nav-link--github" target="_blank"
+            rel="noopener noreferrer" aria-label="GitHub Profile"><i class="ph ph-github-logo" aria-hidden="true"></i>
+            GitHub</a></li>
+      </ul>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <i class="ph ph-list" aria-hidden="true"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Mobile navigation">
+    <button class="mobile-close" id="mobileClose" aria-label="Close navigation menu">
+      <i class="ph ph-x" aria-hidden="true"></i>
+    </button>
+    <ul class="mobile-links" role="list">
+      <li><a href="#home" class="mobile-link">Home</a></li>
+      <li><a href="#skills" class="mobile-link">Skills</a></li>
+      <li><a href="#projects" class="mobile-link">Projects</a></li>
+      <li><a href="#works" class="mobile-link">Works</a></li>
+      <li><a href="#experience" class="mobile-link">Experience</a></li>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+      <li><a href="cv/RyanCastellanoCV.pdf" class="mobile-link" target="_blank" rel="noopener noreferrer"
+          download="RyanCastellanoCV.pdf"><i class="ph ph-file-pdf" aria-hidden="true"></i> Download CV</a></li>
+      <li><a href="https://github.com/lushuking" class="mobile-link" target="_blank" rel="noopener noreferrer"><i
+            class="ph ph-github-logo" aria-hidden="true"></i> GitHub</a></li>
+    </ul>
+  </div>
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="home" aria-labelledby="heroHeading">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="grid-lines"></div>
+        <div class="glow-orb glow-orb--1"></div>
+        <div class="glow-orb glow-orb--2"></div>
+        <div class="glow-orb glow-orb--3"></div>
+        <canvas class="particles-canvas" id="particlesCanvas"></canvas>
+      </div>
+
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-badge reveal">
+            <i class="ph ph-map-pin" aria-hidden="true"></i>
+            <span>Pagadian City, Philippines</span>
+          </div>
+
+          <h1 class="hero-name reveal" id="heroHeading">
+            <span class="name-first">Ryan Jay</span>
+            <span class="name-last">Castellano</span>
+          </h1>
+
+          <div class="hero-roles reveal" aria-label="Professional roles">
+            <span class="role-prefix">I am a </span>
+            <span class="role-text" id="typewriter" aria-live="polite"></span>
+            <span class="cursor-blink" aria-hidden="true">|</span>
+          </div>
+
+          <p class="hero-description reveal">
+            IT Professional &amp; Civil Service Eligible blending system programming, multimedia production, and
+            administrative IT support. Focused on engineering practical tools and clean digital assets that drive real
+            operational impact.
+          </p>
+
+          <div class="hero-cta reveal">
+            <a href="#projects" class="btn btn-primary" aria-label="View my projects">
+              <span>View Projects</span>
+              <i class="ph ph-arrow-right" aria-hidden="true"></i>
+            </a>
+            <a href="cv/RyanCastellanoCV.pdf" class="btn btn-secondary" target="_blank" rel="noopener noreferrer"
+              download="RyanCastellanoCV.pdf" aria-label="Download Ryan Castellano's CV">
+              <span>Download CV</span>
+              <i class="ph ph-file-pdf" aria-hidden="true"></i>
+            </a>
+            <a href="#contact" class="btn btn-secondary" aria-label="Get in touch with me">
+              <span>Get In Touch</span>
+              <i class="ph ph-chat-circle" aria-hidden="true"></i>
+            </a>
+          </div>
+
+          <div class="hero-stats reveal" role="list" aria-label="Key statistics">
+            <div class="stat-item" role="listitem">
+              <span class="stat-number" data-target="100">0</span>
+              <span class="stat-unit">%</span>
+              <span class="stat-label">Digital Records Accuracy</span>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat-item" role="listitem">
+              <span class="stat-number" data-target="82">0</span>
+              <span class="stat-unit">.50</span>
+              <span class="stat-label">Civil Service Rating</span>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat-item" role="listitem">
+              <span class="stat-number" data-target="22">0</span>
+              <span class="stat-unit">yrs</span>
+              <span class="stat-label">Age</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- HERO PORTRAIT SHOWCASE -->
+        <div class="hero-showcase reveal" aria-label="Portrait of Ryan Jay Castellano">
+          <div class="showcase-glow" aria-hidden="true"></div>
+          <div class="showcase-backdrop" aria-hidden="true"></div>
+
+          <div class="showcase-card">
+            <!-- Cyber HUD Corner Brackets -->
+            <span class="hud-corner hud--tl" aria-hidden="true"></span>
+            <span class="hud-corner hud--tr" aria-hidden="true"></span>
+            <span class="hud-corner hud--bl" aria-hidden="true"></span>
+            <span class="hud-corner hud--br" aria-hidden="true"></span>
+
+            <!-- Top system tag -->
+            <div class="showcase-sys-tag" aria-hidden="true">
+              <span class="sys-dot"></span>
+              <span>SYS // RJC-DEV.2026</span>
+            </div>
+
+            <!-- Image Frame with seamless bottom gradient mask -->
+            <div class="showcase-image-box">
+              <img src="profile/Ryan.jpg" alt="Ryan Jay Castellano — IT Professional &amp; Video Production Specialist"
+                class="showcase-photo" />
+              <div class="showcase-gradient-fade" aria-hidden="true"></div>
+            </div>
+
+            <!-- Bottom Integrated Metadata Bar -->
+            <div class="showcase-bottom-bar">
+              <div class="showcase-status">
+                <span class="status-pulse-dot" aria-hidden="true"></span>
+                <span>Available for Remote Work</span>
+              </div>
+              <div class="showcase-meta">
+                <span class="showcase-role">IT &amp; Video Specialist</span>
+                <span class="showcase-location"><i class="ph ph-map-pin" aria-hidden="true"></i> Pagadian City</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating Holographic Feature Chips -->
+          <div class="showcase-chip chip--dev">
+            <div class="chip-icon"><i class="ph ph-code"></i></div>
+            <div class="chip-content">
+              <span class="chip-label">Specialist</span>
+              <span class="chip-title">Web &amp; Systems</span>
+            </div>
+          </div>
+
+          <div class="showcase-chip chip--media">
+            <div class="chip-icon"><i class="ph ph-video-camera"></i></div>
+            <div class="chip-content">
+              <span class="chip-label">Creative</span>
+              <span class="chip-title">Video Producer</span>
+            </div>
+          </div>
+
+          <div class="showcase-chip chip--cert">
+            <div class="chip-icon chip-icon--green"><i class="ph ph-shield-check"></i></div>
+            <div class="chip-content">
+              <span class="chip-label">Verified</span>
+              <span class="chip-title">CSE Eligible &bull; 82.50</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#skills" class="scroll-indicator" aria-label="Scroll to skills section">
+        <div class="scroll-mouse">
+          <div class="scroll-wheel"></div>
+        </div>
+        <span>Scroll Down</span>
+      </a>
+    </section>
+
+    <!-- TOOLS MARQUEE -->
+    <section class="marquee-section" aria-label="Tools and technologies I work with">
+      <div class="marquee-label">
+        <span>Tools I Work With</span>
+      </div>
+      <div class="marquee-wrapper" aria-hidden="true">
+        <!-- Row 1: scroll left -->
+        <div class="marquee-track marquee-track--left">
+          <div class="marquee-items">
+            <div class="marquee-item" style="--brand:#1C1C1C;--brand-text:#ffffff;">
+              <i class="ph ph-scissors"></i> CapCut
+            </div>
+            <div class="marquee-item" style="--brand:#302E2E;--brand-text:#e05a00;">
+              <i class="ph ph-broadcast"></i> OBS Studio
+            </div>
+            <div class="marquee-item" style="--brand:#00C4CC;--brand-text:#ffffff;">
+              <i class="ph ph-pencil-ruler"></i> Canva
+            </div>
+            <div class="marquee-item" style="--brand:#001e36;--brand-text:#31A8FF;">
+              <i class="ph ph-image"></i> Photoshop
+            </div>
+            <div class="marquee-item" style="--brand:#1a0500;--brand-text:#FF9A00;">
+              <i class="ph ph-pen-nib"></i> Illustrator
+            </div>
+            <div class="marquee-item" style="--brand:#6C3483;--brand-text:#ffffff;">
+              <i class="ph ph-code"></i> PHP
+            </div>
+            <div class="marquee-item" style="--brand:#2d2a00;--brand-text:#F7DF1E;">
+              <i class="ph ph-file-js"></i> JavaScript
+            </div>
+            <div class="marquee-item" style="--brand:#003545;--brand-text:#00aff0;">
+              <i class="ph ph-database"></i> MySQL
+            </div>
+            <!-- Duplicates for loop -->
+            <div class="marquee-item" style="--brand:#1C1C1C;--brand-text:#ffffff;">
+              <i class="ph ph-scissors"></i> CapCut
+            </div>
+            <div class="marquee-item" style="--brand:#302E2E;--brand-text:#e05a00;">
+              <i class="ph ph-broadcast"></i> OBS Studio
+            </div>
+            <div class="marquee-item" style="--brand:#00C4CC;--brand-text:#ffffff;">
+              <i class="ph ph-pencil-ruler"></i> Canva
+            </div>
+            <div class="marquee-item" style="--brand:#001e36;--brand-text:#31A8FF;">
+              <i class="ph ph-image"></i> Photoshop
+            </div>
+            <div class="marquee-item" style="--brand:#1a0500;--brand-text:#FF9A00;">
+              <i class="ph ph-pen-nib"></i> Illustrator
+            </div>
+            <div class="marquee-item" style="--brand:#6C3483;--brand-text:#ffffff;">
+              <i class="ph ph-code"></i> PHP
+            </div>
+            <div class="marquee-item" style="--brand:#2d2a00;--brand-text:#F7DF1E;">
+              <i class="ph ph-file-js"></i> JavaScript
+            </div>
+            <div class="marquee-item" style="--brand:#003545;--brand-text:#00aff0;">
+              <i class="ph ph-database"></i> MySQL
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 2: scroll right -->
+        <div class="marquee-track marquee-track--right">
+          <div class="marquee-items">
+            <div class="marquee-item" style="--brand:#1a2800;--brand-text:#7fc832;">
+              <i class="ph ph-rocket-launch"></i> GoHighLevel
+            </div>
+            <div class="marquee-item" style="--brand:#2b1a12;--brand-text:#CC785C;">
+              <i class="ph ph-robot"></i> Claude AI
+            </div>
+            <div class="marquee-item" style="--brand:#0a2a25;--brand-text:#74AA9C;">
+              <i class="ph ph-chat-circle-text"></i> ChatGPT
+            </div>
+            <div class="marquee-item" style="--brand:#00112b;--brand-text:#1877F2;">
+              <i class="ph ph-facebook-logo"></i> Meta Ads
+            </div>
+            <div class="marquee-item" style="--brand:#2b0017;--brand-text:#E1306C;">
+              <i class="ph ph-instagram-logo"></i> Instagram
+            </div>
+            <div class="marquee-item" style="--brand:#2b0000;--brand-text:#FF0000;">
+              <i class="ph ph-youtube-logo"></i> YouTube
+            </div>
+            <div class="marquee-item" style="--brand:#001629;--brand-text:#0A66C2;">
+              <i class="ph ph-linkedin-logo"></i> LinkedIn
+            </div>
+            <div class="marquee-item" style="--brand:#1a1a1a;--brand-text:#cccccc;">
+              <i class="ph ph-github-logo"></i> GitHub
+            </div>
+            <!-- Duplicates -->
+            <div class="marquee-item" style="--brand:#1a2800;--brand-text:#7fc832;">
+              <i class="ph ph-rocket-launch"></i> GoHighLevel
+            </div>
+            <div class="marquee-item" style="--brand:#2b1a12;--brand-text:#CC785C;">
+              <i class="ph ph-robot"></i> Claude AI
+            </div>
+            <div class="marquee-item" style="--brand:#0a2a25;--brand-text:#74AA9C;">
+              <i class="ph ph-chat-circle-text"></i> ChatGPT
+            </div>
+            <div class="marquee-item" style="--brand:#00112b;--brand-text:#1877F2;">
+              <i class="ph ph-facebook-logo"></i> Meta Ads
+            </div>
+            <div class="marquee-item" style="--brand:#2b0017;--brand-text:#E1306C;">
+              <i class="ph ph-instagram-logo"></i> Instagram
+            </div>
+            <div class="marquee-item" style="--brand:#2b0000;--brand-text:#FF0000;">
+              <i class="ph ph-youtube-logo"></i> YouTube
+            </div>
+            <div class="marquee-item" style="--brand:#001629;--brand-text:#0A66C2;">
+              <i class="ph ph-linkedin-logo"></i> LinkedIn
+            </div>
+            <div class="marquee-item" style="--brand:#1a1a1a;--brand-text:#cccccc;">
+              <i class="ph ph-github-logo"></i> GitHub
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills-section section" id="skills" aria-labelledby="skillsHeading">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">What I Do</span>
+          <h2 class="section-title" id="skillsHeading">Skills &amp; Expertise</h2>
+          <p class="section-sub">A blend of technical prowess and creative vision.</p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <div class="skill-icon" aria-hidden="true"><i class="ph ph-code"></i></div>
+            <h3>Web Development</h3>
+            <p>Building responsive, full-stack web applications using PHP, JavaScript, and MySQL — from database design
+              to polished front-end interfaces.</p>
+            <ul class="skill-tags" aria-label="Web development technologies">
+              <li>PHP</li>
+              <li>JavaScript</li>
+              <li>MySQL</li>
+              <li>HTML/CSS</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-icon" aria-hidden="true"><i class="ph ph-video-camera"></i></div>
+            <h3>Video Production</h3>
+            <p>Producing daily video advertising deliverables, promotional marketing assets, and finalized scripts for
+              multi-phase media campaigns.</p>
+            <ul class="skill-tags" aria-label="Video production tools">
+              <li>CapCut</li>
+              <li>OBS Studio</li>
+              <li>Script Writing</li>
+              <li>Marketing Videos</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-icon" aria-hidden="true"><i class="ph ph-pen-nib"></i></div>
+            <h3>Graphic Design</h3>
+            <p>Creating promotional materials, event layouts, and digital assets using industry-standard Adobe tools and
+              Canva for modern visual storytelling.</p>
+            <ul class="skill-tags" aria-label="Design tools">
+              <li>Adobe Photoshop</li>
+              <li>Adobe Illustrator</li>
+              <li>Canva</li>
+              <li>Print Design</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-icon" aria-hidden="true"><i class="ph ph-cpu"></i></div>
+            <h3>System Programming</h3>
+            <p>Developing management information systems and databases designed to coordinate complex, multi-stakeholder
+              workflows and resource management.</p>
+            <ul class="skill-tags" aria-label="System programming skills">
+              <li>MIS Development</li>
+              <li>Database Design</li>
+              <li>System Analysis</li>
+              <li>Lead Programming</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-icon" aria-hidden="true"><i class="ph ph-sparkle"></i></div>
+            <h3>Content Creation</h3>
+            <p>Crafting compelling digital content across platforms — from real estate promotional campaigns to
+              educational video presentations and social media assets.</p>
+            <ul class="skill-tags" aria-label="Content creation skills">
+              <li>Social Media</li>
+              <li>Real Estate Content</li>
+              <li>E-commerce Design</li>
+              <li>Presentations</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-icon" aria-hidden="true"><i class="ph ph-files"></i></div>
+            <h3>Document Management</h3>
+            <p>Digitizing and organizing physical records into structured digital archives, and creating event materials
+              for annual general assemblies.</p>
+            <ul class="skill-tags" aria-label="Document management skills">
+              <li>Digitization</li>
+              <li>Record Scanning</li>
+              <li>Event Materials</li>
+              <li>Government Docs</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects-section section" id="projects" aria-labelledby="projectsHeading">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Portfolio</span>
+          <h2 class="section-title" id="projectsHeading">Key Projects</h2>
+          <p class="section-sub">Real-world solutions built with purpose and precision.</p>
+        </div>
+
+        <div class="projects-grid">
+
+          <article class="project-card project-card--featured reveal">
+            <div class="project-badge">
+              <i class="ph ph-star" aria-hidden="true"></i> Capstone Project
+            </div>
+            <div class="project-header">
+              <div class="project-icon" aria-hidden="true"><i class="ph ph-shield-warning"></i></div>
+              <div class="project-meta">
+                <span class="project-timeline"><i class="ph ph-calendar" aria-hidden="true"></i>June 2025 – April
+                  2026</span>
+                <span class="project-role"><i class="ph ph-crown" aria-hidden="true"></i>Lead Programmer</span>
+              </div>
+            </div>
+            <h3 class="project-title">ConnectDRRM</h3>
+            <p class="project-subtitle">Inter-Municipality Disaster Resources &amp; Request Management System</p>
+            <p class="project-desc">A comprehensive Management Information System developed for the Provincial Disaster
+              Risk Reduction and Management Office in Zamboanga del Sur. Designed to coordinate disaster response and
+              manage resource requests across municipalities, streamlining inter-agency collaboration during critical
+              events.</p>
+            <div class="project-org"><i class="ph ph-buildings" aria-hidden="true"></i> Provincial DRRMO — Zamboanga del
+              Sur</div>
+            <ul class="project-tech" aria-label="Technologies used">
+              <li>PHP</li>
+              <li>JavaScript</li>
+              <li>MySQL</li>
+              <li>MIS Architecture</li>
+              <li>Web Development</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/lushuking/connectdrrm" class="btn-project-link" target="_blank"
+                rel="noopener noreferrer" aria-label="View ConnectDRRM on GitHub">
+                <i class="ph ph-github-logo" aria-hidden="true"></i>
+                <span>View on GitHub</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-header">
+              <div class="project-icon" aria-hidden="true"><i class="ph ph-exam"></i></div>
+              <div class="project-meta">
+                <span class="project-timeline"><i class="ph ph-calendar" aria-hidden="true"></i>2026</span>
+                <span class="project-role"><i class="ph ph-code" aria-hidden="true"></i>Developer</span>
+              </div>
+            </div>
+            <h3 class="project-title"><a href="https://lushuking.github.io/cse-reviewer-app/" target="_blank"
+                rel="noopener noreferrer">CSE Reviewer App <i class="ph ph-arrow-up-right" aria-hidden="true"></i></a>
+            </h3>
+            <p class="project-subtitle">Civil Service Exam Practice &amp; Review Tool</p>
+            <p class="project-desc">A web-based Civil Service Examination reviewer app built to help aspiring civil
+              servants prepare effectively. Features practice questions, topic-based review modules, and an interactive
+              interface designed for focused exam preparation.</p>
+            <ul class="project-tech" aria-label="Technologies used">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Web App</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://lushuking.github.io/cse-reviewer-app/" class="btn-project-link btn-project-link--primary"
+                target="_blank" rel="noopener noreferrer" aria-label="Open CSE Reviewer App live website">
+                <i class="ph ph-arrow-square-out" aria-hidden="true"></i>
+                <span>Live Demo</span>
+              </a>
+              <a href="https://github.com/lushuking/cse-reviewer-app" class="btn-project-link" target="_blank"
+                rel="noopener noreferrer" aria-label="View CSE Reviewer App on GitHub">
+                <i class="ph ph-github-logo" aria-hidden="true"></i>
+                <span>View on GitHub</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-header">
+              <div class="project-icon" aria-hidden="true"><i class="ph ph-buildings"></i></div>
+              <div class="project-meta">
+                <span class="project-timeline"><i class="ph ph-calendar" aria-hidden="true"></i>July 2026</span>
+                <span class="project-role"><i class="ph ph-video-camera" aria-hidden="true"></i>Video Producer</span>
+              </div>
+            </div>
+            <h3 class="project-title">ERA NexUS Campaign</h3>
+            <p class="project-subtitle">Global Realty Promotional Media Campaign</p>
+            <p class="project-desc">Produced multi-phase real estate promotional campaigns for ERA NexUS Global Realty —
+              including video advertisements, finalized marketing scripts, and promotional digital assets that drove
+              audience engagement.</p>
+            <ul class="project-tech" aria-label="Technologies used">
+              <li>CapCut</li>
+              <li>Script Writing</li>
+              <li>Video Editing</li>
+              <li>Marketing</li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-header">
+              <div class="project-icon" aria-hidden="true"><i class="ph ph-presentation-chart"></i></div>
+              <div class="project-meta">
+                <span class="project-timeline"><i class="ph ph-calendar" aria-hidden="true"></i>April 2026</span>
+                <span class="project-role"><i class="ph ph-student" aria-hidden="true"></i>OJT Intern</span>
+              </div>
+            </div>
+            <h3 class="project-title">PMES Presentation</h3>
+            <p class="project-subtitle">Pre-Membership Education Seminar Video</p>
+            <p class="project-desc">Designed and produced the official video presentation for the Pre-Membership
+              Education Seminar of the Pagadian City Government Employees Multi-Purpose Cooperative — covering
+              cooperative structure, member rights, and educational content.</p>
+            <ul class="project-tech" aria-label="Technologies used">
+              <li>Video Editing</li>
+              <li>Canva</li>
+              <li>Presentation Design</li>
+              <li>Education Media</li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-header">
+              <div class="project-icon" aria-hidden="true"><i class="ph ph-users-three"></i></div>
+              <div class="project-meta">
+                <span class="project-timeline"><i class="ph ph-calendar" aria-hidden="true"></i>2026</span>
+                <span class="project-role"><i class="ph ph-pen-nib" aria-hidden="true"></i>Graphic Designer</span>
+              </div>
+            </div>
+            <h3 class="project-title">AGA Materials</h3>
+            <p class="project-subtitle">Annual General Assembly Design Package</p>
+            <p class="project-desc">Created a complete set of visual materials for the Annual General Assembly of the
+              Pagadian City Government Employees Multi-Purpose Cooperative — including tarpaulins, programs,
+              certificates, and event collaterals.</p>
+            <ul class="project-tech" aria-label="Technologies used">
+              <li>Adobe Photoshop</li>
+              <li>Canva</li>
+              <li>Print Design</li>
+              <li>Event Branding</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- WORKS GALLERY -->
+    <section class="works-section section" id="works" aria-labelledby="worksHeading">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Gallery</span>
+          <h2 class="section-title" id="worksHeading">My Works</h2>
+          <p class="section-sub">A visual showcase of designs, projects, and creative output.</p>
+        </div>
+
+        <div class="works-grid">
+          <button class="work-item reveal" onclick="openLightbox('works/1.png', 'Work Sample 1')"
+            aria-label="View Work Sample 1">
+            <img src="works/1.png" alt="Work Sample 1" loading="lazy" />
+            <div class="work-overlay"><i class="ph ph-magnifying-glass-plus" aria-hidden="true"></i></div>
+          </button>
+          <button class="work-item reveal" onclick="openLightbox('works/2.png', 'Work Sample 2')"
+            aria-label="View Work Sample 2">
+            <img src="works/2.png" alt="Work Sample 2" loading="lazy" />
+            <div class="work-overlay"><i class="ph ph-magnifying-glass-plus" aria-hidden="true"></i></div>
+          </button>
+          <button class="work-item reveal" onclick="openLightbox('works/3.png', 'Work Sample 3')"
+            aria-label="View Work Sample 3">
+            <img src="works/3.png" alt="Work Sample 3" loading="lazy" />
+            <div class="work-overlay"><i class="ph ph-magnifying-glass-plus" aria-hidden="true"></i></div>
+          </button>
+          <button class="work-item reveal" onclick="openLightbox('works/4.png', 'Work Sample 4')"
+            aria-label="View Work Sample 4">
+            <img src="works/4.png" alt="Work Sample 4" loading="lazy" />
+            <div class="work-overlay"><i class="ph ph-magnifying-glass-plus" aria-hidden="true"></i></div>
+          </button>
+          <button class="work-item reveal" onclick="openLightbox('works/5.png', 'Work Sample 5')"
+            aria-label="View Work Sample 5">
+            <img src="works/5.png" alt="Work Sample 5" loading="lazy" />
+            <div class="work-overlay"><i class="ph ph-magnifying-glass-plus" aria-hidden="true"></i></div>
+          </button>
+          <button class="work-item reveal" onclick="openLightbox('works/6.png', 'Work Sample 6')"
+            aria-label="View Work Sample 6">
+            <img src="works/6.png" alt="Work Sample 6" loading="lazy" />
+            <div class="work-overlay"><i class="ph ph-magnifying-glass-plus" aria-hidden="true"></i></div>
+          </button>
+          <button class="work-item reveal" onclick="openLightbox('works/7.png', 'Work Sample 7')"
+            aria-label="View Work Sample 7">
+            <img src="works/7.png" alt="Work Sample 7" loading="lazy" />
+            <div class="work-overlay"><i class="ph ph-magnifying-glass-plus" aria-hidden="true"></i></div>
+          </button>
+          <button class="work-item reveal" onclick="openLightbox('works/8.png', 'Work Sample 8')"
+            aria-label="View Work Sample 8">
+            <img src="works/8.png" alt="Work Sample 8" loading="lazy" />
+            <div class="work-overlay"><i class="ph ph-magnifying-glass-plus" aria-hidden="true"></i></div>
+          </button>
+          <button class="work-item reveal" onclick="openLightbox('works/9.png', 'Work Sample 9')"
+            aria-label="View Work Sample 9">
+            <img src="works/9.png" alt="Work Sample 9" loading="lazy" />
+            <div class="work-overlay"><i class="ph ph-magnifying-glass-plus" aria-hidden="true"></i></div>
+          </button>
+          <button class="work-item reveal" onclick="openLightbox('works/10.png', 'Work Sample 10')"
+            aria-label="View Work Sample 10">
+            <img src="works/10.png" alt="Work Sample 10" loading="lazy" />
+            <div class="work-overlay"><i class="ph ph-magnifying-glass-plus" aria-hidden="true"></i></div>
+          </button>
+          <button class="work-item reveal" onclick="openLightbox('works/11.png', 'Work Sample 11')"
+            aria-label="View Work Sample 11">
+            <img src="works/11.png" alt="Work Sample 11" loading="lazy" />
+            <div class="work-overlay"><i class="ph ph-magnifying-glass-plus" aria-hidden="true"></i></div>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- LIGHTBOX MODAL -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+      <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+      <div class="lightbox-content">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Close image viewer">
+          <i class="ph ph-x" aria-hidden="true"></i>
+        </button>
+        <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous image">
+          <i class="ph ph-caret-left" aria-hidden="true"></i>
+        </button>
+        <img src="" alt="" class="lightbox-img" id="lightboxImg" />
+        <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next image">
+          <i class="ph ph-caret-right" aria-hidden="true"></i>
+        </button>
+        <div class="lightbox-caption" id="lightboxCaption"></div>
+      </div>
+    </div>
+
+    <!-- EXPERIENCE -->
+    <section class="experience-section section" id="experience" aria-labelledby="expHeading">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Background</span>
+          <h2 class="section-title" id="expHeading">Experience &amp; Education</h2>
+          <p class="section-sub">A journey of continuous growth and real-world impact.</p>
+        </div>
+
+        <div class="timeline">
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot" aria-hidden="true"><i class="ph ph-briefcase"></i></div>
+            <div class="timeline-content">
+              <span class="timeline-period">April 2026 &bull; 486 Hours</span>
+              <h3>OJT / On-the-Job Training</h3>
+              <p class="timeline-org"><i class="ph ph-buildings" aria-hidden="true"></i> Pagadian City Government
+                Employees Multi-Purpose Cooperative</p>
+              <ul class="timeline-tasks">
+                <li>Digitized paper documents by scanning and organizing into structured local digital archives</li>
+                <li>Designed visual materials for the Annual General Assembly event</li>
+                <li>Created and produced the video presentation for the Pre-Membership Education Seminar (PMES)</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot" aria-hidden="true"><i class="ph ph-video-camera"></i></div>
+            <div class="timeline-content">
+              <span class="timeline-period">2026 &bull; Ongoing</span>
+              <h3>Remote Video Production Specialist</h3>
+              <p class="timeline-org"><i class="ph ph-globe" aria-hidden="true"></i> ERA NexUS Global Realty &amp;
+                Various Clients</p>
+              <ul class="timeline-tasks">
+                <li>Produced daily video advertising deliverables for real estate promotional campaigns</li>
+                <li>Developed and finalized scripts for multi-phase media campaigns</li>
+                <li>Built a strong portfolio of edited videos, photos, and digital designs</li>
+                <li>Proactively learning new platforms including e-commerce design workflows</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot" aria-hidden="true"><i class="ph ph-code"></i></div>
+            <div class="timeline-content">
+              <span class="timeline-period">June 2025 – April 2026</span>
+              <h3>Lead Programmer — Capstone Project</h3>
+              <p class="timeline-org"><i class="ph ph-shield-warning" aria-hidden="true"></i> ConnectDRRM | Provincial
+                DRRMO, Zamboanga del Sur</p>
+              <ul class="timeline-tasks">
+                <li>Led the full development of an inter-municipality disaster resource management system</li>
+                <li>Architected the database schema and web application structure</li>
+                <li>Collaborated with the Provincial DRRMO to align system features with real-world needs</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot" aria-hidden="true"><i class="ph ph-graduation-cap"></i></div>
+            <div class="timeline-content">
+              <span class="timeline-period">Graduated 2026</span>
+              <h3>Bachelor of Science in Information Technology</h3>
+              <p class="timeline-org"><i class="ph ph-building" aria-hidden="true"></i> Josefina H. Cerilles State
+                College</p>
+              <ul class="timeline-tasks">
+                <li>Completed BS in Information Technology with a focus on web development and database management</li>
+                <li>Served as Lead Programmer for the institution's capstone project</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot" aria-hidden="true"><i class="ph ph-medal"></i></div>
+            <div class="timeline-content">
+              <span class="timeline-period">Civil Service Eligibility</span>
+              <h3>Civil Service Eligible — Philippines</h3>
+              <p class="timeline-org"><i class="ph ph-seal" aria-hidden="true"></i> Civil Service Commission</p>
+              <ul class="timeline-tasks">
+                <li>Passed the Civil Service Examination with an overall rating of <strong>82.50</strong></li>
+                <li>Eligible for government positions requiring civil service eligibility</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about-section section" id="about" aria-labelledby="aboutHeading">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Who I Am</span>
+          <h2 class="section-title" id="aboutHeading">About Me</h2>
+          <p class="section-sub">Passionate, driven, and always learning.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-visual reveal">
+            <div class="about-glow" aria-hidden="true"></div>
+
+            <div class="about-profile-card">
+              <!-- Verified Profile Card Header -->
+              <div class="about-card-header">
+                <div class="about-thumb-frame">
+                  <img src="profile/Ryan.jpg" alt="Ryan Jay P. Castellano" class="about-thumb-img" />
+                  <span class="about-thumb-check" title="Civil Service Eligible" aria-label="Verified"><i
+                      class="ph-bold ph-check"></i></span>
+                </div>
+                <div class="about-header-details">
+                  <h4 class="about-name">Ryan Jay P. Castellano</h4>
+                  <p class="about-title">IT Professional &amp; Content Creator</p>
+                  <span class="about-cse-pill">
+                    <i class="ph-fill ph-seal-check"></i>
+                    <span>Civil Service Eligible (82.50)</span>
+                  </span>
+                </div>
+              </div>
+
+              <div class="about-card-divider" aria-hidden="true"></div>
+
+              <ul class="info-list">
+                <li>
+                  <i class="ph ph-user" aria-hidden="true"></i>
+                  <div>
+                    <span class="info-label">Full Name</span>
+                    <span class="info-value">Ryan Jay P. Castellano</span>
+                  </div>
+                </li>
+                <li>
+                  <i class="ph ph-cake" aria-hidden="true"></i>
+                  <div>
+                    <span class="info-label">Birthday</span>
+                    <span class="info-value">April 19, 2004 &bull; Age 22</span>
+                  </div>
+                </li>
+                <li>
+                  <i class="ph ph-map-pin" aria-hidden="true"></i>
+                  <div>
+                    <span class="info-label">Location</span>
+                    <span class="info-value">Pagadian City, Philippines</span>
+                  </div>
+                </li>
+                <li>
+                  <i class="ph ph-clock" aria-hidden="true"></i>
+                  <div>
+                    <span class="info-label">Availability</span>
+                    <span class="info-value">Weekdays, 8AM – 10PM PHT</span>
+                  </div>
+                </li>
+                <li>
+                  <i class="ph ph-graduation-cap" aria-hidden="true"></i>
+                  <div>
+                    <span class="info-label">Education</span>
+                    <span class="info-value">BSIT — Josefina H. Cerilles State College</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="about-text reveal">
+            <h3>Bridging Technology &amp; Creativity</h3>
+            <p>I'm Ryan Jay — an IT graduate from Josefina H. Cerilles State College with a passion for building digital
+              solutions that solve real-world problems. My journey spans from developing a disaster management system
+              for a provincial government office, to producing marketing campaigns for global real estate brands.</p>
+            <p>What sets me apart is my dual fluency in both technical development and creative production. I can write
+              clean, efficient PHP and JavaScript code in the morning, and craft compelling video content in the
+              afternoon. This versatility makes me a unique asset in today's fast-moving digital landscape.</p>
+            <p>As a Civil Service eligible professional, I'm committed to excellence and continuous growth — whether
+              it's learning a new platform, mastering a new tool, or delivering high-quality work within tight
+              deadlines.</p>
+
+            <div class="about-availability" role="status" aria-label="Work availability status">
+              <div class="availability-dot" aria-hidden="true"></div>
+              <div>
+                <span class="avail-label">Currently Available</span>
+                <span class="avail-time">Weekdays &bull; 8:00 AM – 10:00 PM PHT</span>
+              </div>
+            </div>
+
+            <div class="about-actions">
+              <a href="#contact" class="btn btn-primary" aria-label="Send Ryan a message">
+                <span>Let's Work Together</span>
+                <i class="ph ph-arrow-right" aria-hidden="true"></i>
+              </a>
+              <a href="cv/RyanCastellanoCV.pdf" class="btn btn-secondary" target="_blank" rel="noopener noreferrer"
+                download="RyanCastellanoCV.pdf" aria-label="Download Ryan Castellano's CV">
+                <i class="ph ph-file-pdf" aria-hidden="true"></i>
+                <span>Download CV</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact-section section" id="contact" aria-labelledby="contactHeading">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Let's Connect</span>
+          <h2 class="section-title" id="contactHeading">Get In Touch</h2>
+          <p class="section-sub">Have a project in mind? I'd love to hear from you.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <h3>Ready to Collaborate?</h3>
+            <p>Whether you need a web application built, a video produced, or compelling design work — I bring
+              dedication, creativity, and technical expertise to every project.</p>
+
+            <div class="contact-cards" role="list" aria-label="Contact details">
+              <a href="mailto:ryancastellano13@gmail.com" class="contact-card contact-card--link" role="listitem"
+                aria-label="Send email to ryancastellano13@gmail.com">
+                <div class="contact-card-icon" aria-hidden="true"><i class="ph ph-envelope"></i></div>
+                <div>
+                  <span class="contact-card-label">Direct Email</span>
+                  <span class="contact-card-value">ryancastellano13@gmail.com</span>
+                </div>
+              </a>
+              <div class="contact-card" role="listitem">
+                <div class="contact-card-icon" aria-hidden="true"><i class="ph ph-map-pin"></i></div>
+                <div>
+                  <span class="contact-card-label">Location</span>
+                  <span class="contact-card-value">Pagadian City, Zamboanga del Sur, Philippines</span>
+                </div>
+              </div>
+              <div class="contact-card" role="listitem">
+                <div class="contact-card-icon" aria-hidden="true"><i class="ph ph-clock"></i></div>
+                <div>
+                  <span class="contact-card-label">Work Hours</span>
+                  <span class="contact-card-value">Weekdays, 8:00 AM – 10:00 PM PHT</span>
+                </div>
+              </div>
+              <div class="contact-card" role="listitem">
+                <div class="contact-card-icon" aria-hidden="true"><i class="ph ph-graduation-cap"></i></div>
+                <div>
+                  <span class="contact-card-label">Education</span>
+                  <span class="contact-card-value">BSIT — Josefina H. Cerilles State College</span>
+                </div>
+              </div>
+              <div class="contact-card" role="listitem">
+                <div class="contact-card-icon" aria-hidden="true"><i class="ph ph-seal"></i></div>
+                <div>
+                  <span class="contact-card-label">Eligibility</span>
+                  <span class="contact-card-value">Civil Service Eligible (Overall: 82.50)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-wrapper reveal">
+            <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST"
+              novalidate aria-label="Contact form">
+              <input type="hidden" name="access_key" value="1f578a89-763b-4e94-a86b-eba13c9f94e8" />
+              <input type="hidden" name="from_name" value="Ryan Jay Castellano Portfolio" />
+              <input type="checkbox" name="botcheck" class="hidden" style="display: none;" />
+              <div class="form-group">
+                <label for="contactName" class="form-label">Your Name</label>
+                <div class="form-input-wrapper">
+                  <i class="ph ph-user" aria-hidden="true"></i>
+                  <input type="text" id="contactName" name="name" class="form-input" placeholder="John Doe" required
+                    aria-required="true" autocomplete="name" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="contactEmail" class="form-label">Email Address</label>
+                <div class="form-input-wrapper">
+                  <i class="ph ph-envelope" aria-hidden="true"></i>
+                  <input type="email" id="contactEmail" name="email" class="form-input" placeholder="john@example.com"
+                    required aria-required="true" autocomplete="email" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="contactSubject" class="form-label">Subject</label>
+                <div class="form-input-wrapper">
+                  <i class="ph ph-tag" aria-hidden="true"></i>
+                  <input type="text" id="contactSubject" name="subject" class="form-input" placeholder="Project Inquiry"
+                    autocomplete="off" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="contactMessage" class="form-label">Message</label>
+                <div class="form-textarea-wrapper">
+                  <i class="ph ph-chat-circle-text" aria-hidden="true"></i>
+                  <textarea id="contactMessage" name="message" class="form-textarea"
+                    placeholder="Tell me about your project..." rows="5" required aria-required="true"></textarea>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full" id="submitBtn" aria-label="Send message">
+                <span>Send Message</span>
+                <i class="ph ph-paper-plane-tilt" aria-hidden="true"></i>
+              </button>
+              <div class="form-success" id="formSuccess" role="alert" aria-live="polite" hidden>
+                <i class="ph-fill ph-check-circle" aria-hidden="true"></i>
+                <span>Message sent! I'll get back to you soon.</span>
+              </div>
+              <div class="form-error" id="formError" role="alert" aria-live="assertive" hidden>
+                <div class="form-error-header">
+                  <i class="ph ph-warning-circle" aria-hidden="true"></i>
+                  <span id="formErrorText">Automatic delivery is currently unavailable.</span>
+                </div>
+                <p style="font-size: 0.8125rem; opacity: 0.85; margin: 0;">Your message is ready — click below to send
+                  it directly to Ryan:</p>
+                <a id="formMailtoBtn" href="mailto:ryancastellano13@gmail.com" class="btn-mailto-fallback">
+                  <i class="ph ph-envelope-simple" aria-hidden="true"></i>
+                  <span>Send via Email Client</span>
+                </a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="footer-logo" aria-label="Back to top">
+            <span class="logo-text">RJC</span><span class="logo-dot"></span>
+          </a>
+          <p>IT Professional &amp; Content Creator based in Pagadian City, Philippines. Building digital solutions with
+            purpose.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <h4>Navigation</h4>
+          <ul role="list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="footer-social">
+          <h4>Connect</h4>
+          <div class="footer-social-links">
+            <a href="cv/RyanCastellanoCV.pdf" class="footer-social-btn" target="_blank" rel="noopener noreferrer"
+              download="RyanCastellanoCV.pdf" aria-label="Download CV">
+              <i class="ph ph-file-pdf" aria-hidden="true"></i>
+              <span>Download CV</span>
+            </a>
+            <a href="mailto:ryancastellano13@gmail.com" class="footer-social-btn"
+              aria-label="Send email to Ryan Jay Castellano">
+              <i class="ph ph-envelope" aria-hidden="true"></i>
+              <span>Email</span>
+            </a>
+            <a href="https://github.com/lushuking" class="footer-social-btn" target="_blank" rel="noopener noreferrer"
+              aria-label="View GitHub profile">
+              <i class="ph ph-github-logo" aria-hidden="true"></i>
+              <span>GitHub</span>
+            </a>
+          </div>
+        </div>
+        <div class="footer-extras">
+          <h4>Expertise</h4>
+          <ul role="list">
+            <li>Web Development</li>
+            <li>Video Production</li>
+            <li>Graphic Design</li>
+            <li>System Programming</li>
+            <li>Content Creation</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Ryan Jay Pahonang Castellano. Crafted with <i class="ph-fill ph-heart"
+            aria-label="love" style="color:var(--green);"></i> in Pagadian City, Philippines.</p>
+        <div class="footer-availability" role="status" aria-label="Available for work">
+          <div class="availability-dot" aria-hidden="true"></div>
+          <span>Available for Remote Work</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="ph ph-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
